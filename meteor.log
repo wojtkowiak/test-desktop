@@ -1,0 +1,27 @@
+Getting installed version for platform android in Cordova project
+
+[[[[[ ~\D\projekty\test-desktop ]]]]]
+
+
+=> Started proxy.
+
+In remote catalog refresh
+
+=> Meteor 1.4.1.1 is available. Update this project with 'meteor update'.
+
+Returning sync token:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1473992952908,"versions":1474015576771,"builds":1474015578255,"releaseTracks":1470728748258,"releaseVersions":1473795486461}
+
+Adding syncToken:
+{"lastDeletion":1409018311766,"format":"1.1","packages":1473992952908,"versions":1474020782252,"builds":1474020783120,"releaseTracks":1470728748258,"releaseVersions":1473795486461}
+
+=> Errors prevented startup:
+   
+   While selecting package versions:
+   error: unknown package in top-level dependencies:
+   omega:meteor-desktop-bundler
+   unknown package in top-level dependencies: omega:meteor-desktop-watcher
+   
+
+=> Your application has errors. Waiting for file change.
+

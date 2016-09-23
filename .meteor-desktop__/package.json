@@ -1,0 +1,45 @@
+{
+  "name": "MyMeteorApp",
+  "main": "app.asar/index.js",
+  "dependencies": {
+    "connect": "3.4.1",
+    "serve-static": "1.10.2",
+    "server-destroy": "1.0.1",
+    "connect-modrewrite": "0.9.0",
+    "winston": "2.2.0",
+    "find-port": "2.0.1",
+    "rimraf": "2.5.4",
+    "shelljs": "0.7.0",
+    "lodash": "4.11.1",
+    "request": "2.72.0",
+    "queue": "4.0.0",
+    "reify": "0.2.1",
+    "devtron": "1.2.1",
+    "electron-debug": "0.6.0",
+    "meteor-desktop-splash-screen": "0.0.20",
+    "nircmd": "2.0.0"
+  },
+  "devDependencies": {
+    "electron-prebuilt": "1.2.5"
+  },
+  "author": "lolek",
+  "version": "0.0.1",
+  "description": "My Meteor App",
+  "private": true,
+  "build": {
+    "win": {
+      "iconUrl": "https://github.com/wojtkowiak/meteor-desktop/blob/beta/scaffold/assets/meteor.ico?raw=true",
+      "title": "My awesome app",
+      "authors": "Author"
+    },
+    "icon": "../.desktop/assets/meteor.ico",
+    "asar": false,
+    "appId": "meteor.app",
+    "category": "meteor.app"
+  },
+  "scripts": {
+    "postinstall": "install-app-deps",
+    "pack": "build --dir",
+    "dist": "build"
+  }
+}

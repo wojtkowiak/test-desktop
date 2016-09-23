@@ -1,0 +1,63 @@
+{
+    "name": "My Meteor App",
+    "projectName": "MyMeteorApp",
+    "devTools": true,
+    "desktopHCP": true,
+    "webAppStartupTimeout": 30000,
+    "window": {
+        "fullscreen": false,
+        "kiosk": false,
+        "alwaysOnTop": false,
+        "icon": "meteor.png",
+        "_windows": {
+            "icon": "meteor.ico"
+        }
+    },
+    "packageJsonFields": {
+        "description": "My Meteor App",
+        "private": true,
+        "author": "lolek"
+    },
+    "builderOptions": {
+        "win": {
+            "iconUrl": "https://github.com/wojtkowiak/meteor-desktop/blob/beta/scaffold/assets/meteor.ico?raw=true",
+            "title": "My Meteor App"
+        },
+        "icon": "../.desktop/assets/meteor.ico",
+        "appId": "meteor.app",
+        "category": "meteor.apps",
+        "mac": {
+            "icon": ".desktop/assets/meteor.icns"
+        },
+        "dmg": {
+            "icon": ".desktop/assets/meteor.icns",
+            "background": ".desktop/assets/splashScreen.png"
+        }
+    },
+    "packagerOptions": {
+        "icon": "meteor.ico",
+        "_osx": {
+            "icon": "meteor.icns"
+        },
+        "version-string": {
+            "CompanyName": "Mextal B.V.",
+            "LegalCopyright": "Copyright 2016 Mextal B.V. All rights reserved.",
+            "FileDescription": "VieDome",
+            "OriginalFilename": "VieDome 3.0.exe",
+            "FileVersion": "@version",
+            "ProductVersion": "@version",
+            "ProductName": "VieDome",
+            "InternalName": "VieDome 3.0.exe"
+        }
+    },
+    "plugins": {
+        "meteor-desktop-splash-screen": {
+            "version": "0.0.20"
+        }
+    },
+    "dependencies": {
+        "serialport": "4.0.1"
+    },
+    "uglify": true,
+    "version": "0.0.1"
+}
