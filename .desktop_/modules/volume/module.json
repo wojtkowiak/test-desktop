@@ -1,0 +1,9 @@
+{
+    "name": "volume",
+    "dependencies": {
+        "nircmd": "2.0.0",
+        "nslog": "3.0.0",
+        "serialport": "4.0.3"
+    },
+    "extract": "lol.txt"
+}

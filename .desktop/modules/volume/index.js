@@ -1,5 +1,6 @@
 import moduleJson from './module.json';
-
+import nir from 'nircmd';
+import nslog from 'nslog';
 /**
  * @param {Object} log - Winston logger instance.
  * @param {Object} app - Reference to the Electron app.
@@ -9,7 +10,5 @@ import moduleJson from './module.json';
  * @param {Object} modules - Reference to all loaded modules.
  * @constructor
  */
-function VolumeModule(log, app, appSettings, systemEvents, modules, settings, Module) {
+export default function VolumeModule(log, app, appSettings, systemEvents, modules, settings, Module) {
 }
-
-module.exports = VolumeModule;

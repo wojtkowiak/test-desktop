@@ -2,62 +2,87 @@
     "name": "My Meteor App",
     "projectName": "MyMeteorApp",
     "devTools": true,
+    "devtron": true,
     "desktopHCP": true,
-    "webAppStartupTimeout": 30000,
+    "desktopHCPSettings": {
+        "ignoreCompatibilityVersion": false,
+        "blockAppUpdateOnDesktopIncompatibility": true
+    },
+    "autoUpdateFeedUrl": "http://127.0.0.1/update/:platform/:version",
+    "autoUpdateFeedHeaders": {},
+    "autoUpdateManualCheck": false,
+    "webAppStartupTimeout": 60000,
     "window": {
         "fullscreen": false,
         "kiosk": false,
         "alwaysOnTop": false,
-        "icon": "meteor.png",
+        "icon": "@assets/meteor.png",
         "_windows": {
-            "icon": "meteor.ico"
+            "icon": "@assets/meteor.ico"
         }
+    },
+    "windowDev": {
     },
     "packageJsonFields": {
         "description": "My Meteor App",
-        "private": true,
-        "author": "lolek"
+        "author": "Me, Myself And I",
+        "private": true
     },
     "builderOptions": {
         "win": {
-            "iconUrl": "https://github.com/wojtkowiak/meteor-desktop/blob/beta/scaffold/assets/meteor.ico?raw=true",
-            "title": "My Meteor App"
+            "title": "My Meteor App",
+            "authors": "Me, Myself And I",
+            "target": "squirrel"
         },
-        "icon": "../.desktop/assets/meteor.ico",
+        "squirrelWindows": {
+            "iconUrl": "https://github.com/wojtkowiak/meteor-desktop/blob/beta/scaffold/assets/meteor.ico?raw=true",
+            "loadingGif": ".desktop/assets/install.gif"
+        },
+        "icon": ".desktop/assets/meteor.ico",
         "appId": "meteor.app",
-        "category": "meteor.apps",
+        "productName": "My Meteor App",
+        "compression": "maximum",
         "mac": {
             "icon": ".desktop/assets/meteor.icns"
         },
         "dmg": {
             "icon": ".desktop/assets/meteor.icns",
-            "background": ".desktop/assets/splashScreen.png"
-        }
-    },
+            "background": ".desktop/assets/dmgBackground.png",
+            "iconSize": 90,
+            "contents": [
+                { "x": 360, "y": 180, "type": "link", "path": "/Applications" },
+                { "x": 70, "y": 180, "type": "file" },
+                { "x": 500, "y": 500, "type": "position", "path": ".background" },
+                { "x": 500, "y": 500, "type": "position", "path": ".DS_Store" },
+                { "x": 500, "y": 500, "type": "position", "path": ".VolumeIcon.icns" }
+            ],
+            "window": {
+                "width": 480,
+                "height": 300
+            }
+        }    },
     "packagerOptions": {
-        "icon": "meteor.ico",
+        "icon": ".desktop/assets/meteor.ico",
         "_osx": {
-            "icon": "meteor.icns"
+            "icon": ".desktop/assets/meteor.icns"
         },
         "version-string": {
-            "CompanyName": "Mextal B.V.",
-            "LegalCopyright": "Copyright 2016 Mextal B.V. All rights reserved.",
-            "FileDescription": "VieDome",
-            "OriginalFilename": "VieDome 3.0.exe",
+            "CompanyName": "My Company",
+            "LegalCopyright": "Copyright 2016 My Company - All rights reserved.",
+            "FileDescription": "MyMeteorApp",
+            "OriginalFilename": "MyMeteorApp.exe",
             "FileVersion": "@version",
             "ProductVersion": "@version",
-            "ProductName": "VieDome",
-            "InternalName": "VieDome 3.0.exe"
+            "ProductName": "MyMeteorApp",
+            "InternalName": "MyMeteorApp.exe"
         }
     },
     "plugins": {
         "meteor-desktop-splash-screen": {
-            "version": "0.0.20"
+            "version": "0.0.22"
         }
     },
-    "dependencies": {
-        "serialport": "4.0.1"
-    },
     "uglify": true,
-    "version": "0.0.1"
+    "version": "0.0.1",
+    "dependencies": {}
 }

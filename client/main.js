@@ -13,7 +13,7 @@ Template.hello.helpers({
     return Template.instance().counter.get();
   },
 });
-console.log('es122222');
+console.log('es122222222');
 
 Template.hello.events({
   'click button'(event, instance) {
